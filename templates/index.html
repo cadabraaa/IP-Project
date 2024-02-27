@@ -1,0 +1,49 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/fixed.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/fontawesome.min.css') }}">
+  <title>Call</title>
+</head>
+
+<body>
+
+  <div class="video-background" >
+    <div class="video-wrap">
+      <div id="video">
+        <video id="bgvid" autoplay loop muted playsinline>
+          <!-- <source src="static/videos/stars.mp4" type="video/mp4"> -->
+          <source src="{{ url_for('static', filename='videos/' + video_filename) }}" type="video/mp4">
+        </video>
+      </div>
+    </div>
+  </div>
+
+  <div class="caption text-center">
+    <h1>I am a click away!</h1>
+    <h3><a class="phone text-center" href="tel:{{ phone_number }}">Call Me</a>
+    </h3>
+  </br>
+    <p>IP : {{ data.ip }}</p>
+    <p>Country : {{ data.country }}</p>
+    <p>City : {{ data.city }}</p>
+
+  </div>
+    <!-- <h3><a class="phone text-center" href="tel:+91-555-555-5555">+1-555-555-5555</a></h3> 
+
+
+
+    <!-- Script Source Files -->
+    <script src="{{ url_for('static', filename='js/bootstrap-4.1.3-dist/js/jquery-3.3.1.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/bootstrap-4.1.3-dist/js/bootstrap.min.js') }}"></script>
+  </div>
+
+
+</body>
+</html>

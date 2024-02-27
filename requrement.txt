@@ -1,0 +1,15 @@
+blinker
+certifi
+charset-normalizer
+click
+flask
+idna
+ipapi
+itsdangerous
+Jinja2
+MarkupSafe
+mysql-connector-python
+requests
+urllib3
+werkzeug
+gunicorn

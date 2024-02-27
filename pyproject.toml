@@ -9,6 +9,8 @@ packages = [{include = "repl_nix_ip_project"}]
 [tool.poetry.dependencies]
 python = "^3.10"
 flask = "^3.0.2"
+ipapi = "^1.0.4"
+mysql-connector-python = "^8.3.0"
 
 
 [build-system]
